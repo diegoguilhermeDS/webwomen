@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="/styles/textos.css">
+    <link rel="stylesheet" href="/styles/botoes.css">
+    <link rel="stylesheet" href="/styles/cards.css">
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
     <title>Webwomen</title>
@@ -16,8 +19,50 @@
     />
 </head>
 <body>
-    <main></main>
+    <div class="container-banner">
+      <picture>
+        <source media="(min-width: 760px)" srcset="../../assets/img/women.png">
+        <img class="banner" src="../../assets/img/women-p.png" alt="imagem do banner">
+      </picture>
+      <div class="fundo-transparente">
+      </div>
+    </div>
+    <header class="cabecalho">
+      <div class="container container-header">
+          <img src="../../assets/img/logo.svg" alt="imagem da logo">
+          <div class="descricao">
+            <h1 class="titulo-1">Lugar de mulher é onde ela quiser!</h1>
+            <p class="titulo-5 titulo-5-color">
+              Está procurando oportunidades de estágio, emprego ou bolsas de estudo? <br>
+              Ou até mesmo oportunidades para atender eventos de tecnologia no Brasil e ao redor do mundo?
+            </p>
+            <p class="titulo-5 titulo-5-color">
+              <strong>Confere aqui embaixo o que temos pra você!</strong>
+            </p>
+          </div>
+          <input class="botao-header" type="button" value="Ir para seção das vagas">
+      </div>
+    </header>
+    <main class="container-principal">
+      <header class="container">
+        <h2 class="titulo-4">Vagas</h2>
+      </header>
+      <section class="container secao-principal">
+        <ul class="lista-vagas" id="lista-vagas">
+         
+        </ul>
+        <aside class="container-vagas-selecionadas">
+          <h3 class="titulo-4">Vagas selecionadas</h3>
+          <ul class="lista-vagas-selecionadas" id="lista-vagas-selecionadas">
+            
+          </ul>
+        </aside>
+      </section>
+    </main>
     <script src="jobsData.js"></script>
+    <script src="../../scripts/VagasSelecionadas.js"></script>
+    <script src="../../scripts/funcionalidadeBotao.js"></script>
+    <script src="../../scripts/renderizando.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

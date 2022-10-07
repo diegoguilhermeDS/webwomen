@@ -5,6 +5,8 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
 }
 
 img {
@@ -20,6 +22,7 @@ img {
   --color-grey-4:  #e9ecef;
   --color-grey-5:  #f1f3f5;
   --color-grey-6:  #ffffff;
+  --color-transparent: rgba(33, 37, 41, 0.5);
   --radius-default: 0.5rem;
 
   --title-1: 3rem;
@@ -31,10 +34,15 @@ img {
   --text-1:  1.125rem;
   --text-2:  1rem;
   --text-3:  0.875rem;
+
+  --radius-1: 0.5rem;
+  --radius-2: 0.25rem;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  color: var(--color-grey-1);
+  background-color: var(--color-grey-5);
 }
 
 .container {
@@ -47,9 +55,11 @@ body {
 
 @media(max-width: 991px){
   :root {
-    --title-1: calc(3rem / 1.2);
+    --title-1: 2rem;
     --title-2: calc(2.5rem / 1.2);
     --title-3: calc(2rem / 1.2);
+    --title-4: 1.25rem;
+    --title-5: 1rem;
     --text-1:  calc(1.125rem / 1.2);
   }
 }

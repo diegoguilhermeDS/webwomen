@@ -1,0 +1,128 @@
+.card-vagas {
+    width: 43.75rem;
+    height: 18.75rem;
+    border-radius: var(--radius-1);
+    padding: 1.375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.75rem;
+    background-color: var(--color-grey-6);
+}
+
+.card-vagas > .card-container-informacoes {
+    display: flex;
+    gap: 2rem;
+}
+
+.card-vagas > .card-container-botao {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-container-botao > .container-modalidade {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.card-vaga-selecionada {
+    width: 100%;
+    background-color: var(--color-grey-6);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1.75rem;
+    gap: 1.25rem;
+    border-bottom: 0.125rem solid var(--color-grey-5);
+}
+.card-vaga-selecionada:hover {
+    background-color: var(--color-grey-5);
+}
+
+.card-vaga-selecionada > .card-vaga-selecionada-titulo {
+    display: flex;
+    gap: 1.625rem;
+}
+.card-vaga-selecionada > .card-vaga-selecionada-info  {
+    display: flex;
+    gap: 2rem;
+}
+
+.card-vaga-vazia {
+    width: 100%;
+    height: 10rem;
+    background-color: var(--color-grey-6);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1.75rem;
+    gap: 1.25rem;
+    border-bottom: 0.125rem solid var(--color-grey-5);
+}
+.card-vaga-vazia:hover {
+    background-color: var(--color-grey-5);
+}
+
+.card-vaga-vazia:hover > .container-objetos > .objeto-card-1 {
+    background-color: var(--color-grey-6);
+}
+
+.card-vaga-vazia:hover > .container-objetos > .objeto-card-3 > .caixa-1 {
+    background-color: var(--color-grey-6);
+} 
+
+.container-objetos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.container-objetos > .objeto-card-1 {
+    width: 6.25rem;
+    height: 0.85rem;
+    background-color: var(--color-grey-5);
+    border-radius: 2rem;
+}
+.container-objetos > .objeto-card-2 {
+    width: 10rem;
+}
+.container-objetos > .objeto-card-3 {
+    display: flex;
+    gap: 9px;
+}
+
+.objeto-card-3 > .caixa-1 {
+    width: 5rem;
+    height: 0.85rem;
+    background-color: var(--color-grey-5);
+    border-radius: 2rem;
+}
+
+.objeto-card-3 > .caixa-2 {
+    width: 4rem;
+}
+
+
+
+@media (max-width: 991px) {
+    .card-vagas {
+        width: 100%;
+        height: 33.75rem;
+        gap: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-vagas > .card-container-botao {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .card-vaga-selecionada {
+        width: 100%;
+    }
+
+
+}

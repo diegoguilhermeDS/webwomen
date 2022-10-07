@@ -1,0 +1,42 @@
+.titulo-1 {
+    font-size: var(--title-1);
+    font-weight: 600; 
+    color: var(--color-grey-3);
+}
+.titulo-2 {
+    font-size: var(--title-2);
+    font-weight: 600; 
+}
+.titulo-3 {
+    font-size: var(--title-3);
+    font-weight: 600;
+     
+}
+.titulo-4 {
+    font-size: var(--title-4);
+    font-weight: 600; 
+    
+}
+.titulo-5 {
+    font-size: var(--title-5);
+    font-weight: 400; 
+    line-height: 2.25rem;
+}
+
+.titulo-5-color {
+    color: var(--color-grey-5);
+}
+
+.texto-1 {
+    font-size: var(--text-1);
+    font-weight: 400; 
+}
+.texto-2 {
+    font-size: var(--text-2);
+    font-weight: 400; 
+    line-height: 2rem;
+}
+.texto-3 {
+    font-size: var(--text-3);
+    font-weight: 400; 
+}
