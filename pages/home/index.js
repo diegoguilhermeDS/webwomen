@@ -1,19 +1,7 @@
 /* Desenvolva sua lógica aqui... */
-function indetificandoAlterandoValorBotao() {
-    let vagasSelecionadas = pegarItensLocalStorage()
-    let listaVagasFilhos = Array.from(document.querySelector(".lista-vagas").children)
+import { renderJobs, renderJobsSelected } from "../../scripts/render.js";
+import { jobsData } from "./jobsData.js";
+import { getJobsLocalStorage } from "../../scripts/functionsButton.js";
 
-    listaVagasFilhos.map(elemento => {
-        let { id } = elemento
-        let botaoDoElementoAtual = elemento.children[3].children[1]
-        
-        vagasSelecionadas.find(elemento => {
-            if (elemento.id === +id) {
-                botaoDoElementoAtual.value = "Remover candidatura"
-            }
-        })
-    })
-
-}
-
-indetificandoAlterandoValorBotao()
+renderJobs(jobsData);
+renderJobsSelected(getJobsLocalStorage());

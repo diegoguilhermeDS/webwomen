@@ -1,4 +1,4 @@
-const jobsData = [
+export const jobsData = [
   {
     id: 0,
     title: "Pessoa desenvolvedora front-end - React",
