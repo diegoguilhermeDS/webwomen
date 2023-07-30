@@ -68,7 +68,7 @@ function renderJobsSelected(list) {
       cardJobSelected.innerHTML = `
             <div class="cardJobSelectedTitle">
                 <h4>${title}</h4>
-                <button class="buttonBin" type="button"><img src="../../assets/img/trash.png" alt="imagem da lixeira" style="user-select: none;"></button>
+                <button class="buttonBin" type="button"><img src="../assets/img/trash.png" alt="imagem da lixeira" style="user-select: none;"></button>
             </div>
             <div class="cardJobSelectedInfo">
                 <small class="textThree">${enterprise}</small>
