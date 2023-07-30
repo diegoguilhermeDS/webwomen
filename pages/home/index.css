@@ -1,115 +1,108 @@
 /* Desenvolva sua estilização aqui... */
-.cabecalho {
-    position: relative;
-    
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 45.938rem;
+  width: 100%;
+  margin-bottom: 2.813rem;
 }
 
-.container-banner {
-    width: 100%;
-    position: fixed;
+.containerBanner {
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
 }
 
-.banner{
-    width: 100%;
-    transform: scale(1.1);
+.banner {
+  width: 100%;
+  transform: scale(1.1);
 }
 
-.fundo-transparente {
-    width: 100%;
-    background-color: var(--color-transparent);
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+.bgTransparent {
+  width: 100%;
+  background-color: var(--color-transparent);
+  height: 120%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.cabecalho {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 45.938rem;
-    width: 100%;
-    margin-bottom: 2.813rem;
+.containerHeader > img {
+  margin-bottom: 3.75rem;
+}
+.containerHeader > .description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3.75rem;
 }
 
-.container-header > img {
-    margin-bottom: 3.75rem;
-}
-.container-header > .descricao {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 3.75rem;
-}
-
-.container-principal {
-    display: flex;
-    flex-direction: column;
-    gap: 3.375rem;
-    padding-bottom: 2rem;
-    position: relative;
-    width: 100%;
-    padding-top: 2.813rem;
-    background-color: var(--color-grey-5);
+.containerMain {
+  display: flex;
+  flex-direction: column;
+  gap: 3.375rem;
+  padding-bottom: 2rem;
+  position: relative;
+  width: 100%;
+  padding-top: 2.813rem;
+  background-color: var(--color-grey-5);
 }
 
-.secao-principal {
-
-    display: flex;
-    justify-content: space-between;
+.sectionMain {
+  display: flex;
+  justify-content: space-between;
 }
 
-.lista-vagas {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.listJobs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.container-vagas-selecionadas {
-    width: 27rem;
-    max-width: 100%;
-    height: 0%;
-    border-radius: var(--radius-1);
-    background-color: var(--color-grey-6);
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding-top: 2rem;
+.containerJobsSelecteds {
+  width: 27rem;
+  max-width: 100%;
+  height: 0%;
+  border-radius: var(--radius-1);
+  background-color: var(--color-grey-6);
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
 }
 
-.container-vagas-selecionadas > h3 {
-    margin-left: 2rem;
+.containerJobsSelecteds > h3 {
+  margin-left: 2rem;
 }
-
-
 
 @media (max-width: 991px) {
-    .container-banner {
-        height: 790px;
-        width: 100%;
-        overflow: hidden;
-    }
+  .containerBanner {
+    height: 790px;
+    width: 100%;
+    overflow: hidden;
+  }
 
-    .banner {
-        width: 100%;
-        transform: scale(1.1);
-    }
+  .banner {
+    width: 100%;
+    transform: scale(1.1);
+  }
 
-    .container-header > .descricao {
-        gap: 2rem;
-    }
+  .containerHeader > .description {
+    gap: 2rem;
+  }
 
-    .container-principal {
-        padding-bottom: 3.125rem;
-        margin-bottom: 0;
-    }
+  .containerMain {
+    padding-bottom: 3.125rem;
+    margin-bottom: 0;
+  }
 
-    .secao-principal {
-        flex-direction: column;
-        gap: 2.25rem;
-    }
+  .sectionMain {
+    flex-direction: column;
+    gap: 2.25rem;
+  }
 
-    .container-vagas-selecionadas {
-        width: 100%;
-    }
+  .containerJobsSelecteds {
+    width: 100%;
+  }
 }

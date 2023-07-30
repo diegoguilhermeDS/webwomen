@@ -1,0 +1,40 @@
+.titleOne {
+  font-size: var(--title-1);
+  font-weight: 600;
+  color: var(--color-grey-3);
+}
+.titleTwo {
+  font-size: var(--title-2);
+  font-weight: 600;
+}
+.titleThree {
+  font-size: var(--title-3);
+  font-weight: 600;
+}
+.titleFour {
+  font-size: var(--title-4);
+  font-weight: 600;
+}
+.titleFiver {
+  font-size: var(--title-5);
+  font-weight: 400;
+  line-height: 2.25rem;
+}
+
+.titleFiver-color {
+  color: var(--color-grey-5);
+}
+
+.textOne {
+  font-size: var(--text-1);
+  font-weight: 400;
+}
+.textTwo {
+  font-size: var(--text-2);
+  font-weight: 400;
+  line-height: 2rem;
+}
+.textThree {
+  font-size: var(--text-3);
+  font-weight: 400;
+}

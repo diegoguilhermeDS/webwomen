@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./styles/texts.css" />
+    <link rel="stylesheet" href="./styles/button.css" />
+    <link rel="stylesheet" href="./styles/cards.css" />
+    <link rel="stylesheet" href="./pages/home/index.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Webwomen</title>
+    <meta
+      name="description"
+      content="Está procurando oportunidades de estágio, emprego ou bolsas de estudo? 
+      Ou até mesmo oportunidades para atender eventos de tecnologia no Brasil 
+      e ao redor do mundo?"
+    />
+  </head>
+  <body>
+    <div class="containerBanner">
+      <picture>
+        <source media="(min-width: 760px)" srcset="./assets/img/women.png" />
+        <img
+          class="banner"
+          src="./assets/img/women-p.png"
+          alt="imagem do banner"
+        />
+      </picture>
+      <div class="bgTransparent"></div>
+    </div>
+    <header class="header">
+      <div class="container containerHeader">
+        <img src="./assets/img/logo.svg" alt="imagem da logo" />
+        <div class="description">
+          <h1 class="titleOne">Lugar de mulher é onde ela quiser!</h1>
+          <p class="titleFiver titleFiver-color">
+            Está procurando oportunidades de estágio, emprego ou bolsas de
+            estudo? <br />
+            Ou até mesmo oportunidades para atender eventos de tecnologia no
+            Brasil e ao redor do mundo?
+          </p>
+          <p class="titleFiver titleFiver-color">
+            <strong>Confere aqui embaixo o que temos pra você!</strong>
+          </p>
+        </div>
+        <a
+          class="buttonHeader"
+          href="#containerMain"
+        >Ir para seção das vagas</a>
+      </div>
+    </header>
+    <main class="containerMain" id="containerMain">
+      <header class="container">
+        <h2 class="titleFour">Vagas</h2>
+      </header>
+      <section class="container sectionMain">
+        <ul class="listJobs" id="listJobs"></ul>
+        <aside class="containerJobsSelecteds">
+          <h3 class="titleFour">Vagas selecionadas</h3>
+          <ul class="containerJobsSelecteds" id="containerJobsSelecteds"></ul>
+        </aside>
+      </section>
+    </main>
+    <!--  <script src="./pages/home/jobsData.js"></script>
+    <script src="./scripts/VagasSelecionadas.js"></script>
+    <script src="./scripts/functionsButton.js"></script>
+    <script src="./scripts/render.js"></script> -->
+    <script type="module" src="./pages/home/index.js"></script>
+  </body>
+</html>
